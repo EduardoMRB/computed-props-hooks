@@ -1,0 +1,18 @@
+{:paths ["src/main" "resources"]
+
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        com.taoensso/timbre {:mvn/version "4.10.0"}
+        com.taoensso/tufte {:mvn/version "2.1.0"}
+        com.wsscode/pathom {:mvn/version "2.2.31"}
+        com.fulcrologic/fulcro {:mvn/version "3.2.11"}
+        com.fulcrologic/guardrails {:mvn/version "0.0.12"}
+        org.clojure/core.async {:mvn/version "1.2.603"}}
+
+ :aliases {:dev {:jvm-opts ["-XX:-OmitStackTraceInFastThrow"]
+                 :extra-deps {org.clojure/clojurescript {:mvn/version "1.10.773"}
+                              thheller/shadow-cljs {:mvn/version "2.10.14"}
+                              expound {:mvn/version "0.8.4"}
+                              fulcrologic/fulcro-spec {:mvn/version "3.1.4"}
+                              binaryage/devtools {:mvn/version "1.0.0"}
+                              com.github.awkay/workspaces {:mvn/version "1.0.1"},
+                              org.clojure/tools.namespace {:mvn/version "1.0.0"}}}}}
